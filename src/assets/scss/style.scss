@@ -1,8 +1,10 @@
 @use 'variables';
 @use 'reset';
 @use 'typography';
+@use 'layout';
 
 @use 'components/button';
+@use 'components/img';
 @use 'components/nav';
 @use 'components/showcase';
 @use 'components/footer';

@@ -1,1 +1,34 @@
-
+.nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: var(--gap);
+	&__menu {
+		padding-left: 0;
+		list-style-type: none;
+		display: flex;
+		gap: var(--gap);
+	}
+	&__link {
+		padding: .8em 1em;
+		text-decoration: none;
+		color: inherit;
+		&:visited {
+			color: inherit;
+		}
+		&:hover {
+			background-color: var(--color--background--grey);
+			border-radius: .3em;
+			text-decoration: underline;
+		}
+		&:focus {
+			background-color: var(--color--background--grey);
+			border-radius: .3em;
+			text-decoration: underline;
+			outline: 2px solid black;
+		}
+	}
+	&__title {
+		text-transform: uppercase;
+	}
+}
