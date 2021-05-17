@@ -1,0 +1,11 @@
+.showcase {
+	background-color: var(--color--primary);
+	color: var(--color--text--primary);
+	&__header {
+		color: white;
+	}
+	&__button {
+		background-color: var(--color--background--light);
+		color: var(--color--primary);
+	}
+}

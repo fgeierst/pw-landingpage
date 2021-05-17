@@ -1,6 +1,10 @@
 :root {
-	--gap: 2rem;
-	--gap-small: 1rem;
-	--gap-large: 4rem;
-	--border: 2px solid black;
+	--color--primary: #4c7cb2; // blue grey
+	--color--secondary: #337667; // dark teal
+	--color--background--light: white;
+	--color--background--dark: black;
+	--color--background--grey: #f2f2f2; // light grey
+	--color--text: black;
+	--color--text--primary: #a3bdd9; // ice blue
+	--gap: 1rem;
 }
