@@ -1,0 +1,10 @@
+/* Box sizing */
+/* Remove default margin */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+
