@@ -1,12 +1,14 @@
+// ---- Mobile view: nav closed
 .nav {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	padding: var(--gap);
+	gap: var(--gap);
 	&__menu {
+		display: none;
 		padding-left: 0;
 		list-style-type: none;
-		display: flex;
 		gap: var(--gap);
 	}
 	&__link {
@@ -30,5 +32,53 @@
 	}
 	&__title {
 		text-transform: uppercase;
+	}
+	&__button-close {
+		display: none;
+	}
+}
+
+// ---- Mobile view: nav open
+.js-nav--open .nav {
+	--background-color: #f2f2f2; // light grey
+	--gap: 1.5em;
+	background-color: var(--background-color);
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	flex-direction: column;
+	justify-content: center;
+	&__menu {
+		display: flex;
+		flex-direction: column;
+	}
+	&__menu:last-of-type {
+		// order: -1;
+	}
+	&__title {
+		display: none;
+	}
+	&__button-open {
+		display: none;
+	}
+	&__button-close {
+		display: inline;
+		position: absolute;
+		right: 1rem;
+		top: 1rem;
+	}
+}
+
+// ---- Desktop view
+@media screen and (min-width: 800px) {
+	.nav {
+		&__menu {
+			display: flex;
+		}
+		&__button-open {
+			display: none;
+		}
 	}
 }

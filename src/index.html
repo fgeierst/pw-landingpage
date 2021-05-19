@@ -5,20 +5,24 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width">
 	<title>Website Name</title>
-	<link rel="stylesheet" href="assets/scss/style.scss">
+	<link rel="stylesheet" href="./assets/scss/style.scss">
 </head>
 
-<body>
+<body class="">
 	<header>
 		<nav class="nav">
 			<ul class="nav__menu">
+				<li><a class="nav__link" href="https://www.pluswerk.ag/">Link 1</a></li>
 				<li><a class="nav__link" href="https://www.pluswerk.ag/">Link 2</a></li>
 				<li><a class="nav__link" href="https://www.pluswerk.ag/">Link 3</a></li>
-				<li><a class="nav__link" href="https://www.pluswerk.ag/">Link 1</a></li>
 				<li><a class="nav__link" href="https://www.pluswerk.ag/">Link 4</a></li>
 			</ul>
 			<h1 class="nav__title">Website Name</h1>
-			<a class="button" href="https://www.pluswerk.ag/">Login</a>
+			<ul class="nav__menu">
+				<a class="button nav__button-login" href="#">Login</a>
+			</ul>
+			<button class="button nav__button-open">Menu</button>
+			<button class="button nav__button-close">Close</button>
 		</nav>
 	</header>
 	<section class="showcase container">
@@ -77,6 +81,8 @@
 			</ul>
 		</nav>
 	</footer>
+
+	<script src="./assets/script.js"></script>
 
 </body>
 
