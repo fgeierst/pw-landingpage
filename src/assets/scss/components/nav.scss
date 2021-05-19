@@ -36,6 +36,12 @@
 	&__button-close {
 		display: none;
 	}
+	&__hamburger:before {
+		content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 18 18" alt="open menu"><path stroke="white" stroke-width="2.9" stroke-linecap="round" d="M1.4 2.6h15.2M1.4 8.6h15.2M1.4 14.6h15.2"/></svg>');
+		display: inline-block;
+		width: 1em;
+		height: 1em;
+	}
 }
 
 // ---- Mobile view: nav open
@@ -54,20 +60,19 @@
 		display: flex;
 		flex-direction: column;
 	}
-	&__menu:last-of-type {
-		// order: -1;
-	}
 	&__title {
 		display: none;
 	}
 	&__button-open {
-		display: none;
-	}
-	&__button-close {
-		display: inline;
 		position: absolute;
 		right: 1rem;
 		top: 1rem;
+	}
+	&__hamburger:before {
+		content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 16" alt="close menu"><path stroke="white" stroke-width="2.9" stroke-linecap="round" d="M3 14L14 3M3 3l11 11"/></svg>');
+		display: inline-block;
+		width: 1em;
+		height: 1em;
 	}
 }
 
