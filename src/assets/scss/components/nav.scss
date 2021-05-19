@@ -1,4 +1,4 @@
-// ---- Mobile view: nav closed
+// ---- Mobile View: Nav Closed
 .nav {
 	display: flex;
 	justify-content: space-between;
@@ -10,25 +10,6 @@
 		padding-left: 0;
 		list-style-type: none;
 		gap: var(--gap);
-	}
-	&__link {
-		padding: .8em 1em;
-		text-decoration: none;
-		color: inherit;
-		&:visited {
-			color: inherit;
-		}
-		&:hover {
-			background-color: var(--color--background--grey);
-			border-radius: .3em;
-			text-decoration: underline;
-		}
-		&:focus {
-			background-color: var(--color--background--grey);
-			border-radius: .3em;
-			text-decoration: underline;
-			outline: 2px solid black;
-		}
 	}
 	&__title {
 		text-transform: uppercase;
@@ -44,7 +25,7 @@
 	}
 }
 
-// ---- Mobile view: nav open
+// ---- Mobile View: Nav open
 .js-nav--open .nav {
 	--background-color: #f2f2f2; // light grey
 	--gap: 1.5em;
@@ -70,13 +51,10 @@
 	}
 	&__hamburger:before {
 		content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 16" alt="close menu"><path stroke="white" stroke-width="2.9" stroke-linecap="round" d="M3 14L14 3M3 3l11 11"/></svg>');
-		display: inline-block;
-		width: 1em;
-		height: 1em;
 	}
 }
 
-// ---- Desktop view
+// ---- Desktop View
 @media screen and (min-width: 800px) {
 	.nav {
 		&__menu {

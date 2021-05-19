@@ -5,8 +5,7 @@ function openNav() {
 	console.log(this);
 	hamburgerButton.setAttribute('aria-label', 'close menu');
 	window.addEventListener('keyup', handleKeyUp);
-	document.querySelector('.nav__link').focus(); // set focus to first menu item
-	// TODO: trap focus in modal
+	document.querySelector('.button-link').focus(); // set focus to first menu item
 }
 
 function closeNav() {
