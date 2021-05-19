@@ -2,7 +2,6 @@ const hamburgerButton = document.querySelector('.nav__hamburger');
 
 function openNav() {
 	document.body.classList.add('js-nav--open');
-	console.log(this);
 	hamburgerButton.setAttribute('aria-label', 'close menu');
 	window.addEventListener('keyup', handleKeyUp);
 	document.querySelector('.button-link').focus(); // set focus to first menu item
