@@ -1,16 +1,16 @@
 .button {
 	display: inline-block;
-	background-color: var(--text-color);
-	color: var(--background-color);
+	background-color: var(--button-color);
+	color: var(--button-text-color);
 	text-decoration: none;
 	border-radius: .3em;
 	padding: .8em 4em;
 	&:hover {
-		background-color: var(--hover-color);
+		background-color: var(--button-hover-color);
 	}
 	&:focus {
 		outline: none;
-		box-shadow: 0 0 0 2px var(--background-color), 0 0 0 4px var(--text-color);
+		box-shadow: 0 0 0 2px var(--background-color), 0 0 0 4px var(--button-color);
 	}
 	&-link {
 		background-color: var(--background-color);
@@ -18,7 +18,7 @@
 		padding-inline: .8em;
 	}
 	&-link:hover {
-		--hover-color: #f2f2f2;
+		--button-hover-color: #f2f2f2;
 	}
 	&-link:focus {
 		outline: none;

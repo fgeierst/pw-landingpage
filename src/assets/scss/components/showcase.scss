@@ -1,11 +1,14 @@
 .showcase {
-	--background-color: #4c7cb2; // blue grey
-	--hover-color: #c8d8e9; // light ice blue
+	--background-color: #3f79ad;
 	--text-color: #ffffff;
+	--button-color: #ffffff;
+	--button-text-color: #12538e;
+	--button-hover-color: #c8d8e9;
 	background-color: var(--background-color);
 	color: var(--text-color);
 	&__text {
-		--text-color: #a3bdd9; // ice blue
+		// --text-color: #a3bdd9; // ice blue -> color contrast fails a11y
+		// TODO: remove style, it's unused because of a11y
 		color: var(--text-color);
 	}
 }
