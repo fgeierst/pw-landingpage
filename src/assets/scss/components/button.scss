@@ -15,7 +15,8 @@
 	&-link {
 		background-color: var(--background-color);
 		color: var(--text-color);
-		padding-inline: .8em;
+		padding-left: .8em;
+		padding-right: .8em;
 	}
 	&-link:hover {
 		--button-hover-color: #f2f2f2;

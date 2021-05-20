@@ -15,7 +15,8 @@
 		text-transform: uppercase;
 	}
 	&__hamburger {
-		padding-inline: .8em;
+		padding-left: .8em;
+		padding-right: .8em;
 	}
 	&__hamburger:before {
 		content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 18 18" alt="open menu"><path stroke="white" stroke-width="2.9" stroke-linecap="round" d="M1.4 2.6h15.2M1.4 8.6h15.2M1.4 14.6h15.2"/></svg>');
